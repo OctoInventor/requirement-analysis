@@ -129,7 +129,207 @@ Importance: By addressing risks upfront, the development team can devise strateg
 
 
 
+# Types of Requirements.
+
+
+ # Hotel Management Service
+
+
+# Functional Requirements:
+
+- Hotel Information Management:
+
+Ability for hotel managers to add, update, and delete hotel information (e.g., room types, prices, availability).
+
+Example: A manager updates the room rates for a peak season.
+
+- API Handling:
+
+APIs to handle requests for hotel data.
+
+Example: An API call to update the number of available rooms.
+
+- Load Balancing:
+
+Distribute incoming requests across multiple servers.
+
+Example: Requests from hotel manager apps are distributed to different servers to balance the load.
+
+Data Sync with CDN and Messaging Queue:
+
+Sync updates to CDN and messaging queues for further processing.
+
+Example: A room availability update is sent to the CDN and RabbitMQ.
+
+
+# Non-functional Requirements:
+
+- Performance:
+
+The system must handle high volumes of requests efficiently.
+
+Example: The load balancer can handle thousands of requests per second.
+
+- Scalability:
+
+The ability to scale horizontally by adding more servers.
+
+Example: Adding more servers to the hotel service cluster during peak seasons.
+
+- Reliability:
+
+Ensures the system is available and operational 99.99% of the time.
+
+Example: Using a failover mechanism in case one server goes down.
+
+- Security:
+
+Secure data transmission and storage.
+
+Example: Using SSL/TLS for secure communication and encryption for sensitive data.
 
 
 
-                                                                                                                         
+# Customer Service (Search + Booking)
+
+
+# Functional Requirements:
+
+- Search Functionality:
+
+Allow customers to search for hotels based on various criteria (e.g., location, price, amenities).
+
+Example: A customer searches for hotels in Accra with a pool.
+
+- Booking Functionality:
+
+Enable customers to book rooms.
+
+Example: A customer books a room for a weekend trip.
+
+- Payment Processing:
+
+Integrate with third-party payment services for processing payments.
+
+Example: Using a payment gateway to handle credit card transactions.
+
+- Data Sync and Caching:
+
+Use Redis for caching frequently accessed data and syncing with messaging queues.
+
+Example: Caching search results for popular destinations to reduce load times.
+
+Non-functional Requirements:
+
+- Usability:
+
+The system should be user-friendly and easy to navigate.
+
+Example: A clean and intuitive interface for searching and booking hotels.
+
+- Availability:
+
+Ensure the service is available 24/7.
+
+Example: Using redundant servers to ensure continuous availability.
+
+- Performance:
+
+Fast response times for search queries and booking processes.
+
+Example: Search results are returned within 2 seconds.
+
+- Scalability:
+
+Ability to handle increasing user loads.
+
+Example: Scaling the search service to handle a surge in traffic during holiday seasons.
+
+
+
+
+# View Booking Service
+
+# Functional Requirements:
+
+- Booking History:
+
+Allow users to view their past and current bookings.
+
+Example: A customer checks their booking history for a previous stay.
+
+- Notification System:
+
+Send notifications to users about booking updates and offers.
+
+Example: A customer receives a notification about a new promotional offer.
+
+# Non-functional Requirements:
+
+- Performance:
+
+Fast loading times for booking history.
+
+Example: Booking history data is fetched within 3 seconds.
+
+- Scalability:
+
+Ability to handle a growing number of users and bookings.
+
+Example: Supporting millions of users and their booking data without performance degradation.
+
+- Reliability:
+
+Ensuring data consistency and reliability.
+
+Example: Using backup systems to prevent data loss.
+
+- Security:
+
+Protect user data and booking details.
+
+Example: Using encryption for storing sensitive booking information.
+
+
+
+# Final Design
+
+# Functional Requirements:
+
+- Data Processing and Storage:
+
+Process and store data for big data analysis.
+
+Example: Using Hadoop for storing large volumes of booking data for analysis.
+
+- Notification System:
+
+Handle notifications for both customers and managers.
+
+Example: Sending a notification when a booking is confirmed.
+
+# Non-functional Requirements:
+
+- Scalability:
+
+Handle large-scale data processing and storage.
+
+Example: Scaling the Hadoop cluster to accommodate growing data.
+
+- Performance:
+
+Efficient data processing for real-time analysis.
+
+Example: Processing data in real-time using Apache Streaming services.
+
+- Reliability:
+
+Ensure continuous and accurate data processing.
+
+Example: Using fault-tolerant systems to ensure no data loss during processing.
+
+- Security:
+
+Securely handle and store data for analysis.
+
+Example: Implementing access controls and encryption for sensitive data.
