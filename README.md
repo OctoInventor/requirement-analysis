@@ -131,6 +131,7 @@ Importance: By addressing risks upfront, the development team can devise strateg
 
 # Types of Requirements.
 
+https://drive.google.com/file/d/1fv_CM-A_OajzlJWNq-6dlUhrUjvtvmoo/view?usp=drive_link
 
  # Hotel Management Service
 
@@ -333,3 +334,62 @@ Example: Using fault-tolerant systems to ensure no data loss during processing.
 Securely handle and store data for analysis.
 
 Example: Implementing access controls and encryption for sensitive data.
+
+
+
+
+# Use Case Diagrams
+
+Actors: Represent users or systems interacting with the system. They can be human users, 
+other systems, or devices. Actors are essential for understanding who interacts with the system and what roles they play.
+
+
+Example: A customer booking a hotel room, a manager updating hotel information.
+Use Cases: Represent specific functionalities or actions that the system can perform to
+achieve a goal. Use cases are typically depicted by ovals in the diagram and help in understanding 
+the system's behavior from a user's perspective.
+
+
+Example: "Search Hotel," "Book Hotel," "Update Room Rates."
+System Boundary: Defines the scope of the system, indicating what is included in the system and what is external to it. 
+It helps in clearly delineating the system's boundaries and setting expectations about its interactions with external entities.
+
+
+- Relationships: Show how actors and use cases interact within the system. 
+Relationships include associations between actors and use cases, as well as more complex interactions like extensions and inclusions.
+These relationships provide a deeper understanding of how different components of the system interact.
+
+
+
+# Benefits:
+
+- Clarity and Communication: Use case diagrams provide a visual representation of the system's functionality and user interactions, 
+making it easier to communicate complex ideas and requirements among stakeholders, developers, and users.
+
+
+- Requirement Identification: By outlining the system's functionalities and interactions,
+use case diagrams help in identifying and documenting the functional requirements of the system,
+ensuring that all necessary functionalities are considered and captured.
+
+
+- System Scope Definition: The diagrams clearly define the boundaries of the system, 
+illustrating what is included in the system and what is not. This helps in managing project scope, 
+setting clear expectations, and avoiding scope creep.
+
+
+- User-Centric Design: Focusing on user interactions in use case diagrams ensures that the system is designed with the end user in mind.
+By aligning system functionalities with user needs and goals, the resulting system is more user-friendly and intuitive.
+
+
+- Early Validation: Stakeholders can validate requirements and use cases early in the development process through use case diagrams.
+This early validation reduces the risk of misunderstandings, ensures that the system meets user needs, 
+and helps in delivering a more successful product.
+
+
+- Planning and Estimation: Use case diagrams aid in project planning and estimation by providing a visual overview of the system's functionalities.
+This clarity helps in resource allocation, timeline estimation, and overall project management, 
+leading to more accurate planning and successful project execution.
+
+
+
+
